@@ -14,9 +14,9 @@ layout: default
             datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished"
             >{{ page.date | date: "%b %-d, %Y" }}</time
-          >{% if page.author %} •
+          >{% if page.comentado_por %} •
           <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-            ><span itemprop="name">{{ page.author }}</span></span
+            ><span itemprop="name">{{ page.comentado_por }}</span></span
           >{% endif %}
         </p>
       </header>
