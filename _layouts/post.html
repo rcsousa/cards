@@ -18,15 +18,7 @@ layout: default
           <span itemprop="author" itemscope itemtype="http://schema.org/Person"
             ><span itemprop="name">Comentado por {{ page.comentado_por }}</span></span
           >{% endif %}
-        </p>
-        <p class="post-meta">
-          {% if page.highlight_url %} •
-          <span itemprop="headline" itemscope itemtype="https://schema.org/CreativeWork">
-            <span itemprop="headline">Publicação original: <a href="{{page.highlight_url}}">{{ page.highlight_title }}</a></span>
-            <span itemprop="author">Autor: {{ page.highlight_autor }}</span>
-            </span
-          >{% endif %}
-        </p>        
+        </p>            
       </header>
       <div class="post-content" itemprop="articleBody">{{ content }}</div>
     </article>
