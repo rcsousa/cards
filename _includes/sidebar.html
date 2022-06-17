@@ -13,14 +13,16 @@
   <div class="mt10 recent">
     <h2>Artigo original</h2>
     <ul>
+      <li><a href="#" class="btn btn-info">Artigo Original</a></li>
       <li>
         <span itemprop="headline" itemscope itemtype="https://schema.org/CreativeWork">
-          <span itemprop="headline"><a href="{{page.highlight_url}}">{{ page.highlight_title }}</a></span>
+          <small><span itemprop="headline"><a href="{{page.highlight_url}}">{{ page.highlight_title }}</a></span></small>
         </span>
       </li>
+      <li><a href="#" class="btn btn-info">Autor</a></li>
       <li>
         <span itemprop="headline" itemscope itemtype="https://schema.org/CreativeWork">  
-        <span itemprop="author">{{ page.highlight_autor }}</span>
+        <small><span itemprop="author">{{ page.highlight_autor }}</span></small>
       </span>
       </p>
     </li>  
