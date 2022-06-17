@@ -11,18 +11,19 @@
   </div>
 
   <div class="mt10 recent">
-    <h2>Recent articles</h2>
+    <h2>Artigo original</h2>
     <ul>
-      {% for post in site.related_posts limit:3 %}
-
       <li>
-        <p>
-          <a href="{{ post.url  | relative_url }}">{{ post.title }}</a
-          ><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small>
-        </p>
+        <span itemprop="headline" itemscope itemtype="https://schema.org/CreativeWork">
+          <span itemprop="headline">Headline: <a href="{{page.highlight_url}}">{{ page.highlight_title }}</a></span>
+        </span>
       </li>
-
-      {% endfor %}
+      <li>
+        <span itemprop="headline" itemscope itemtype="https://schema.org/CreativeWork">  
+        <span itemprop="author">Autor: {{ page.highlight_autor }}</span>
+      </span>
+      </p>
+    </li>  
     </ul>
   </div>
   {% if site.fb-like-box %}
