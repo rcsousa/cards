@@ -2,7 +2,7 @@
 layout: post 
 title:  "Resposta de incidentes de segurança: O poder está no processo"
 date:   2022-06-12 08:00:00 -0300 --->
-image: /images/security_post.png
+image: /images/Cloud_post.png
 published: true
 tag: "Edição #14 - 13.06.2022"
 headline: "Resposta de incidentes de segurança: O poder está no processo"
