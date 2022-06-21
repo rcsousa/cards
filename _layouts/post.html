@@ -16,7 +16,7 @@ layout: default
             >{{ page.date | date: "%b %-d, %Y" }}</time
           >{% if page.comentado_por %} •
           <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-            ><span itemprop="name">Comentado por {{ page.comentado_por }}</span></span
+            ><span itemprop="name">Comentado por <a href="{{page.comentado_por_linkedin}}"> {{page.comentado_por }}</a></span></span
           >{% endif %}
         </p>            
       </header>
@@ -28,13 +28,13 @@ layout: default
         <ul class="pagination">
           {% if page.next.url %}
           <li class="page-item">
-            <a class="page-link" href="#" tabindex="-1"
-              >&laquo; {{page.next.title}}</a
-            >
+            <a class="btn btn-info" href="{{page.next.url}}" tabindex="-1"
+              >&laquo; {{page.next.title}}</a>
           </li>
           {% endif %} {% if page.previous.url %}
+          <span>&nbsp;&nbsp;</span>
           <li class="page-item">
-            <a class="page-link" href="#">{{page.previous.title}} &raquo;</a>
+            <a class="btn btn-info" href="{{page.previous.url}}">{{page.previous.title}} &raquo;</a>
           </li>
           {% endif %}
         </ul>
