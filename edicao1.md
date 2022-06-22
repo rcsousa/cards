@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /edicao1/ 
 ---
 
 <div class="home py-4 py-md-5">
